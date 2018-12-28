@@ -1,0 +1,19 @@
+﻿
+
+<div id="vueapp">
+
+    <!--two way binding for FirstName, if user modiies the text it automatically update firstname inside the 'data', of if 'data' gets modified then the v-model gets modified too!-->
+
+    <input type="text" v-model="person.firstName" />
+    <input type="text" v-model="person.lastName" />
+
+
+    <!--one way binding for below 'firstName', if firstName is changed the text below is changed.-->
+    <p> {{ person.firstName }}</p>
+
+    <br />
+    <span> Text from component Comp1:</span>
+    <comp1 v-bind:person="person"></comp1>
+
+
+</div>

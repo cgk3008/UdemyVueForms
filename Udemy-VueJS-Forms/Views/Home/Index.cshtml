@@ -1,6 +1,10 @@
 ﻿
 @using Udemy_VueJS_Forms.Models
 
+<script>
+    var viewModelData = @(Html.GetClientModel<Udemy_VueJS_Forms.Models.ViewModels.MainAppViewModel1>(ViewBag.ViewModel as Udemy_VueJS_Forms.Models.ViewModels.MainAppViewModel1));
+</script>
+
 @Helpers.LoadFile("~/Vue/templates/comp1-template.html")
 <script src="~/Vue/components/comp1.js"></script>
 @Helpers.LoadFile("~/Vue/templates/maintemplate1.html")

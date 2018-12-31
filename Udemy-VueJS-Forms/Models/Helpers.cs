@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace Udemy_VueJS_Forms.Models
 {
-    public class Helpers
+    public static class Helpers //has to add "static"
     {
         public static IHtmlString LoadFile(string webpath)
         {
@@ -25,7 +27,26 @@ namespace Udemy_VueJS_Forms.Models
                     }
                 }
             }
+
             return returnContent;
+
+            
         }
+
+        //code below added for ViewModel
+
+        public static MvcHtmlString GetClientModel<TModel>(this HtmlHelper helper) where TModel : new() => GetClientModel(helper, new TModel());
+
+            //converting an obkect of type T to a Json formatted string
+
+
+
+            public static MvcHtmlString GetClientModel<TModel>(this HtmlHelper helper, TModel model)
+            {
+                string escapedJson = JsonConvert.SerializeObject(model, Newtonsoft.Json.Formatting.None);
+
+                MvcHtmlString ret = new MvcHtmlString($"{escapedJson}");
+                return ret;
+            }
     }
 }

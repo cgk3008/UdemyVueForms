@@ -2,9 +2,9 @@
 @using Udemy_VueJS_Forms.Models
 
 @Helpers.LoadFile("~/Vue/templates/comp1-template.html")
-@Helpers.LoadFile("~/Vue/components/comp1.html")
+<script src="~/Vue/components/comp1.js"></script>
 @Helpers.LoadFile("~/Vue/templates/maintemplate1.html")
-@Helpers.LoadFile("~/Vue/mainapp/mainapp1.html")
+<script src="~/Vue/mainapp/mainapp1.js"></script>
 
 
 
@@ -14,3 +14,6 @@
     @Html.Raw(File.ReadAllText(Server.MapPath("~/Vue/components/comp1.html")))
     @Html.Raw(File.ReadAllText(Server.MapPath("~/Vue/templates/maintemplate1.html")))
     @Html.Raw(File.ReadAllText(Server.MapPath("~/Vue/mainapp/mainapp1.html")))*@
+
+
+@*Part 8 utilizes option 3 for organzing the View Model and load it from the backend !!!!!!*@

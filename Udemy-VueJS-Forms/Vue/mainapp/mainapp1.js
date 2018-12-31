@@ -1,7 +1,6 @@
 ﻿
 
 
-<script>
 
     var mainVue = new Vue(
         {
@@ -15,4 +14,3 @@
             },
         });
 
-</script>

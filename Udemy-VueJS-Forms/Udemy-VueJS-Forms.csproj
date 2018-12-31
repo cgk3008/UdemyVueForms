@@ -194,8 +194,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\vue.js" />
-    <Content Include="Vue\components\comp1.html" />
-    <Content Include="Vue\mainapp\mainapp1.html" />
+    <Content Include="Vue\components\comp1.js" />
+    <Content Include="Vue\mainapp\mainapp1.js" />
     <Content Include="Vue\templates\comp1-template.html" />
     <Content Include="Vue\templates\maintemplate1.html" />
     <Content Include="Web.config" />

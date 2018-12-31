@@ -2,15 +2,17 @@
 
 
 
-    var mainVue = new Vue(
-        {
-            el: '#vueapp',
+var mainVue = new Vue(
+    {
+        el: '#vueapp',
 
-            data: {
-                person: {
-                    firstName: 'First Name',
-                    lastName: 'Last Name',
-                }
-            },
-        });
+        components: ['comp1'],
+
+        data: {
+            person: {
+                firstName: 'First Name',
+                lastName: 'Last Name',
+            }
+        },
+    });
 

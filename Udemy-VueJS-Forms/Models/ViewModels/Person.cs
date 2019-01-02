@@ -9,12 +9,18 @@ namespace Udemy_VueJS_Forms.Models.ViewModels
     {
         public string firstName { get; set; }
         public string lastName { get; set; }
+        public string email { get; set; }
 
-        public Person(string fn, string ln)
+        public Person(string fn, string ln, string em)
         {
             firstName = fn;
             lastName = ln;
+            email = em;
         }
 
     }
+
+
+
+
 }

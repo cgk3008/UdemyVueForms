@@ -165,6 +165,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Helpers.cs" />
+    <Compile Include="Models\ViewModels\FormData.cs" />
     <Compile Include="Models\ViewModels\MainAppViewModel1.cs" />
     <Compile Include="Models\ViewModels\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
